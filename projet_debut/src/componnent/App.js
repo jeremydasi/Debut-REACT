@@ -14,6 +14,7 @@ import Calorie from './Poids';
 import {Route, Routes } from 'react-router-dom';
 import Header from './header';
 import Login from './Login';
+import Drag_and_Drop from './Drag_and_Drop';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/TypesExample" element={<TypesExample/>}></Route>
           <Route path="/StaticExample" element={<StaticExample/>}></Route>
           <Route path="/Poids" element={<Calorie/>}></Route>
+          <Route path="/Drag_and_Drop" element={<Drag_and_Drop/>}></Route>
         </Routes>
       </header>
     </div>

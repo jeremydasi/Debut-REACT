@@ -18,7 +18,7 @@ const initialColumns = ['TODO', 'Doing', 'Done'].map((title, i) => ({
   cardIds: initialCards.slice(i * 3, i * 3 + 3).map(card => card.id),
 }));
 
-class App extends Component {
+class Drag_and_Drop extends Component {
   state = {
     cards: initialCards,
     columns: initialColumns,
@@ -59,12 +59,11 @@ class App extends Component {
       columns: state.columns.map(column => ({
         ...column,
         cardIds: _.flowRight(
-          // 2) If this is the destination column, insert the cardId.
+
           ids =>
             column.id === destColumnId
               ? [...ids.slice(0, index), cardId, ...ids.slice(index)]
               : ids,
-          // 1) Remove the cardId for all columns
           ids => ids.filter(id => id !== cardId)
         )(column.cardIds),
       })),
@@ -84,4 +83,4 @@ class App extends Component {
   }
 }
 
-export default DragDropContext(HTML5Backend)(App);
+export default DragDropContext(HTML5Backend)(Drag_and_Drop);
