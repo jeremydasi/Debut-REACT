@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-export default function App() {
+export default function Toggle() {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {

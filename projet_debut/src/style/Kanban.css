@@ -1,0 +1,23 @@
+.Column {
+    display: flex;
+}
+
+.AFaire {
+    width: 140px;
+    height: 210px;
+    background-color: blue;
+    margin-right: 20px;
+}
+
+.EnCours {
+    width: 140px;
+    height: 210px;
+    background-color: red;
+    margin-right: 20px;
+}
+
+.Terminer {
+    width: 140px;
+    height: 210px;
+    background-color: green;
+}
