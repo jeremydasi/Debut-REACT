@@ -13,7 +13,7 @@ function Header() {
             <Link to="/TypesExample"><button>Bouton coloré</button></Link>
             <Link to="/StaticExample"><button>Modal</button></Link>
             <Link to="/Poids"><button>Calorie</button></Link>
-            <Link to="/Drag_and_Drop"><button>Kanban</button></Link>
+            <Link to="/Kanban"><button>Kanban</button></Link>
         </nav>
     );
 }
