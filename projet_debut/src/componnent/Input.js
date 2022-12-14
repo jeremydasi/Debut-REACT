@@ -5,7 +5,7 @@ function Input() {
 
     return (
     <div>
-        <h1>Bonjour, {prenom}</h1>
+        <h1>Hello, {prenom}</h1>
         <input type="text" value={prenom} onChange={e => setPrenom(e.target.value)}/>
     </div>
     )
